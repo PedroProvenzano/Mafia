@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mafia</title>
+</head>
+<body>
+    <div id="contenedorVotantes" class="contenedorVotantes">
+        <p class="votantes">Votantes</p>
+        <div class="refs">
+            <p>Nombre</p>
+            <p>Vive?</p>
+            <p>A quien voto</p>
+            <p>Rol</p>
+        </div>
+
+    </div>
+
+    <div id="cuadroAnotaciones">
+        <textarea name="anotaciones" id="anotaciones" cols="30" rows="10"></textarea>
+        <div id="botonAnotaciones">
+            Guardar
+        </div>
+    </div>
+
+    <div id="centroVotacion">
+        <input type="text" placeholder="A quien votar..." id="aQuienVotar">
+        <div id="botonVotar">
+            Votar!
+        </div>
+
+        <div id="consola">
+
+        </div>
+        
+
+
+        <div class="contLinks">
+            <a href="https://busqueda-tesoro-api.herokuapp.com/mafia" target="_blank">Más informacion sobre el juego</a>
+        </div>
+    </div>
+    <div id="contenedorRoles">
+        <div id="contenedorBotonesRoles">
+            <div id="botonPolicia">
+                Policia
+            </div>
+            <div id="botonAsesinos">
+                Asesino
+            </div>
+            <div id="botonMedico">
+                Medico
+            </div>
+        </div>
+        <div id="consolaPolicia">
+
+        </div>
+        <div id="consolaAsesinos">
+
+        </div>
+        <div id="consolaMedico">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

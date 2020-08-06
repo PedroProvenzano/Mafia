@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Chilanka', cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1rem;
+}
+.contenedorVotantes{
+    display: grid;
+    grid-template-areas: 
+    "votantes"
+    "refs";
+    grid-template-columns: 1fr;
+    width: 50rem;
+    height: 40rem;
+    border: 4px solid black;
+    background-color: blanchedalmond;
+}
+.votantes{
+    grid-area: votantes;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.refs{
+    grid-area: refs;
+}
+.refs p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedorVotantes div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+}
+.contenedorVotantes div p{
+    border: 2px solid black;
+    flex-grow: 5;
+}
+#centroVotacion{
+    margin-top: 1rem;
+    border: 2px solid black;
+    background-color: burlywood;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#aQuienVotar, #keyPersonal{
+    width: 20rem;
+    height: 2rem;
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+#botonVotar{
+    border: 2px solid black;
+    margin-top: 2rem;
+    background-color: blanchedalmond;
+    font-size: 1.4rem;
+    cursor: pointer;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#botonVotar:hover{
+    background-color: rgb(126, 233, 112);
+}
+#consola{
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    width: 20rem;
+    height: 5rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
+.contLinks{
+    margin-top: 1rem;
+}
+.contLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+#cuadroAnotaciones{
+    background-color: blanchedalmond;
+    border: black 2px solid;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#anotaciones{
+    width: 100%;
+    height: 90%;
+    background-color: burlywood;
+    resize: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+#botonAnotaciones{
+    border: black 2px solid;
+    width: 30%;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    background-color: burlywood;
+}
+#botonAnotaciones:hover{
+    background-color: rgb(126, 233, 112);
+    cursor: pointer;
+    user-select: none;
+}
+#parrafoAnotaciones{
+    font-size: 1.4rem;
+}
+
+/* Seccion policia/asesinos/medico */
+
+#contenedorRoles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    background-color: burlywood;
+    width: 50rem;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+#contenedorBotonesRoles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 2rem;
+}
+#botonPolicia{
+    background-color: rgb(152, 189, 236);
+}
+#botonAsesinos{
+    background-color: rgb(206, 108, 127);
+}
+#botonMedico{
+    background-color: rgb(250, 242, 134);
+}
+#contenedorBotonesRoles div{
+    width: 20%;
+    border-top: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contenedorBotonesRoles div:hover{
+    background-color: rgb(126, 233, 112);
+    cursor: pointer;
+}
+
+#consolaPolicia,
+#consolaAsesinos,
+#consolaMedico{
+    width: 100%;
+    height: 90%;
+    font-size: 2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#consolaPolicia{
+    background-color: rgb(152, 189, 236);
+    display: flex;
+}
+#consolaAsesinos{
+    background-color: rgb(206, 108, 127);
+}
+#consolaMedico{
+    background-color: rgb(250, 242, 134);
+}
+#consolaAsesinos,
+#consolaMedico{
+    display: none;
+}
